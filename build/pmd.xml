@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<ruleset name="rules" xmlns="http://pmd.sf.net/ruleset/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
+         xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+    <description>PMD rules</description>
+
+    <rule ref="rulesets/basic.xml">
+        <exclude name="AvoidUsingHardCodedIP"/>
+        <!--flaw/buggy rules-->
+        <exclude name="CheckResultSet"/>
+    </rule>
+
+    <rule ref="rulesets/strings.xml">
+        <exclude name="AvoidDuplicateLiterals"/>
+    </rule>
+
+    <rule ref="rulesets/unusedcode.xml/UnusedPrivateField"/>
+    <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable"/>
+    <rule ref="rulesets/unusedcode.xml/UnusedPrivateMethod"/>
+    <rule ref="rulesets/unusedcode.xml/UnusedFormalParameter"/>
+
+    <rule ref="rulesets/imports.xml/DuplicateImports"/>
+    <rule ref="rulesets/imports.xml/DontImportJavaLang"/>
+    <rule ref="rulesets/imports.xml/UnusedImports"/>
+    <rule ref="rulesets/imports.xml/ImportFromSamePackage"/>
+
+    <rule ref="rulesets/typeresolution.xml/LooseCoupling"/>
+    <rule ref="rulesets/typeresolution.xml/CloneMethodMustImplementCloneable"/>
+    <rule ref="rulesets/typeresolution.xml/UnusedImports"/>
+
+    <rule ref="rulesets/controversial.xml/UnnecessaryConstructor"/>
+    <rule ref="rulesets/controversial.xml/UnusedModifier"/>
+    <rule ref="rulesets/controversial.xml/AssignmentInOperand"/>
+    <rule ref="rulesets/controversial.xml/DontImportSun"/>
+    <rule ref="rulesets/controversial.xml/UnnecessaryParentheses"/>
+    <rule ref="rulesets/controversial.xml/DoNotCallGarbageCollectionExplicitly"/>
+
+    <rule ref="rulesets/coupling.xml/LooseCoupling"/>
+
+    <rule ref="rulesets/design.xml/SimplifyBooleanReturns"/>
+    <rule ref="rulesets/design.xml/SimplifyBooleanExpressions"/>
+    <rule ref="rulesets/design.xml/SwitchStmtsShouldHaveDefault"/>
+    <rule ref="rulesets/design.xml/AvoidDeeplyNestedIfStmts"/>
+    <rule ref="rulesets/design.xml/AvoidReassigningParameters"/>
+    <rule ref="rulesets/design.xml/ConstructorCallsOverridableMethod"/>
+    <rule ref="rulesets/design.xml/AccessorClassGeneration"/>
+    <rule ref="rulesets/design.xml/FinalFieldCouldBeStatic"/>
+    <rule ref="rulesets/design.xml/CloseResource"/>
+    <rule ref="rulesets/design.xml/NonStaticInitializer"/>
+    <rule ref="rulesets/design.xml/DefaultLabelNotLastInSwitchStmt"/>
+    <rule ref="rulesets/design.xml/NonCaseLabelInSwitchStatement"/>
+    <rule ref="rulesets/design.xml/OptimizableToArrayCall"/>
+    <rule ref="rulesets/design.xml/BadComparison"/>
+    <rule ref="rulesets/design.xml/EqualsNull"/>
+    <rule ref="rulesets/design.xml/InstantiationToGetClass"/>
+    <rule ref="rulesets/design.xml/IdempotentOperations"/>
+    <rule ref="rulesets/design.xml/ImmutableField"/>
+    <rule ref="rulesets/design.xml/AvoidProtectedFieldInFinalClass"/>
+    <rule ref="rulesets/design.xml/MissingBreakInSwitch"/>
+    <rule ref="rulesets/design.xml/UseNotifyAllInsteadOfNotify"/>
+    <rule ref="rulesets/design.xml/AvoidInstanceofChecksInCatchClause"/>
+    <rule ref="rulesets/design.xml/SimplifyConditional"/>
+    <rule ref="rulesets/design.xml/CompareObjectsWithEquals"/>
+    <rule ref="rulesets/design.xml/PositionLiteralsFirstInComparisons"/>
+    <rule ref="rulesets/design.xml/UnnecessaryLocalBeforeReturn"/>
+    <rule ref="rulesets/design.xml/AvoidConstantsInterface"/>
+    <rule ref="rulesets/design.xml/UnsynchronizedStaticDateFormatter"/>
+    <rule ref="rulesets/design.xml/PreserveStackTrace"/>
+    <rule ref="rulesets/design.xml/UseCollectionIsEmpty"/>
+    <rule ref="rulesets/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal"/>
+    <rule ref="rulesets/design.xml/SingularField"/>
+
+    <rule ref="rulesets/finalizers.xml/AvoidCallingFinalize"/>
+
+    <rule ref="rulesets/junit.xml/SimplifyBooleanAssertion"/>
+    <rule ref="rulesets/junit.xml/UseAssertNullInsteadOfAssertTrue"/>
+    <rule ref="rulesets/junit.xml/UseAssertSameInsteadOfAssertTrue"/>
+    <rule ref="rulesets/junit.xml/UseAssertEqualsInsteadOfAssertTrue"/>
+    <rule ref="rulesets/junit.xml/UnnecessaryBooleanAssertion"/>
+
+    <rule ref="rulesets/strictexception.xml/ExceptionAsFlowControl"/>
+    <rule ref="rulesets/strictexception.xml/AvoidCatchingNPE"/>
+    <rule ref="rulesets/strictexception.xml/AvoidThrowingNullPointerException"/>
+    <rule ref="rulesets/strictexception.xml/DoNotExtendJavaLangError"/>
+    <rule ref="rulesets/strictexception.xml/DoNotThrowExceptionInFinally"/>
+    <rule ref="rulesets/strictexception.xml/AvoidThrowingNewInstanceOfSameException"/>
+</ruleset>
