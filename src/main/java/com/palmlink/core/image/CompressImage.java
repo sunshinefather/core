@@ -6,12 +6,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-
 import net.coobird.thumbnailator.Thumbnails;
-
 import com.palmlink.core.platform.exception.BusinessProcessException;
 
 public final class CompressImage {
